@@ -1,55 +1,80 @@
 <footer id="footer">
-  <img src="../img/Group 35.png" alt="truck" id="truck-footer" />
-  <img src="../img/BG.png" alt="fundo azul" />
-  <div id="div-form">
-    <form class="form" method="POST" action="/saveUser">
-      <label for="name">Name</label>
-      <input
-        id="name"
-        name="name"
-        type="text"
-        placeholder="insert your name here"
-      />
-      <label for="email">Email address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        placeholder="insert your email here"
-      />
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="2"
-        placeholder="What items do you want to transport?"
-      ></textarea>
-      <button type="submit" class="btn-banner">
-        Get Started
-        <svg
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 30 13"
-        >
-          <path
-            d="M23.889 12.355 29.5 6.177l-1-1.1v-.073h-.066L23.888 0l-1.48 1.346 3.323 3.658H0v2h26.046l-3.637 4.004 1.48 1.347Z"
-            fill="#fff"
-          />
-        </svg>
-      </button>
-    </form>
-  </div>
-  <div id="footer-row">
-    <div>
-      <img src="../img/logo.png" alt="logo" class="trafico" />
+  <img class="footer-img" src="../img/Group 35.png" alt="" id="truck-footer" />
+
+  <div class="footer-content">
+    <div class="footer-flex">
+      <div class="footer-msg">
+        <p>
+          We provide traffic management consultants so you get started quickly,
+          contact us for a quote today!
+        </p>
+      </div>
+
+      <div id="form">
+        <div class="footer-form">
+          <form method="POST" action="/saveUser">
+            <label for="name">Name</label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="insert your name here"
+            />
+
+            <label for="email">Email address</label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="insert your email here"
+            />
+
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="2"
+              placeholder="What items do you want to transport?"
+            ></textarea>
+
+            <button type="submit" class="btn-banner">
+              Get Started
+
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 13"
+              >
+                <path
+                  d="M23.889 12.355 29.5 6.177l-1-1.1v-.073h-.066L23.888 0l-1.48 1.346 3.323 3.658H0v2h26.046l-3.637 4.004 1.48 1.347Z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-    <nav class="menu">
-      <ul id="lista-menu">
-        <li><a href="#nav-about" class="menu">ABOUT </a></li>
-        <li><a href="#nav-how" class="menu">HOW TO</a></li>
-        <li><a href="#nav-faq" class="menu">FAQS</a></li>
-        <a href="#nav-contact" id="button-menu">CONTACT US</a>
-      </ul>
-    </nav>
+
+    <div id="footer row" class="footer-nav">
+      <div class="logo">
+        <img src="../img/logo.png" alt="logo" class="trafico" />
+      </div>
+
+      <nav class="menu">
+        <ul id="lista-menu">
+          <li><a href="#nav-about" class="menu">ABOUT </a></li>
+
+          <li><a href="#nav-how" class="menu">HOW TO</a></li>
+
+          <li><a href="#nav-faq" class="menu">FAQS</a></li>
+
+          <a href="#nav-contact" id="button-menu">CONTACT US</a>
+        </ul>
+      </nav>
+    </div>
   </div>
 </footer>

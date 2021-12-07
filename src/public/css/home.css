@@ -174,34 +174,103 @@
 
 }
 
-#footer {
-  display: flex;
-  flex-direction: column;
-}
-
-#truck-footer {
-  position: relative;
-  top: 12px;
-  width: 200px;
-}
-
-#div-form {
+.footer-form {
+  display: block;
   position: absolute;
+  right: 95px;
+  top: -100px;
   border-radius: 10px;
-  left: 300px;
-  background-color: black;
-  width: 500px;
-  margin-top: 30px;
+  background: #fff;
+  width: 550px;
+  padding: 50px 75px 40px;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  z-index: 10;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 60vh;
+.footer-content {
+  background-image: url("/img/BG.png");
+  height: 660px;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
-#footer-row {
+.footer-flex {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.footer-msg {
+  margin-top: 100px;
+  width: 380px;
+  color: white;
+  border-left: 10px solid #ed4d47;
+  padding: 17.5px 0;
+}
+
+.footer-form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-form input,
+textarea {
+  border: 1px solid rgba(238, 77, 71, 0.5);
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  /* padding: 180px 40px; */
+  margin-bottom: 40px;
+}
+
+.footer-form input::placeholder,
+textarea::placeholder {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer-form input:focus-within,
+textarea:focus-within {
+  border: 2px solid #ee4d47;
+}
+
+.btn-banner {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background: #ee4d47;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-banner:hover {
+  background: linear-gradient(rgb(238, 77, 71) 0%, rgb(64, 43, 43) 50%);
+}
+
+.btn-banner svg {
+  width: 29.5px;
+  height: 12.35px;
+  margin-left: 24px;
+}
+
+.footer-img {
+  width: 380px;
+  height: 200px;
+  display: block;
+  margin-bottom: -26px;
+  z-index: 2;
+  position: relative;
+}
+
+.footer-nav {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
 }
