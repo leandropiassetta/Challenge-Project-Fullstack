@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
         autoIncrement: true,
       },
-      nome: DataTypes.STRING,
+      name: DataTypes.STRING,
       email: DataTypes.STRING,
       mensagem: DataTypes.TEXT,
       createdAt: {
