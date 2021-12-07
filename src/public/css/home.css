@@ -166,12 +166,31 @@
   margin-bottom: 40px;
 }
 
+.details {
+  display: flex;
+}
+
+.btn-faq  {
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    border: none;
+    background: rgba(237, 77, 71, 0.2);
+    color: #ed4d47;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 input[type="checkbox"] {
   display: none;
 }
 
 .wrap-collabsible {
-  margin: 1rem 0;
+  margin: 10px 0;
 }
 
 .lbl-toggle {
@@ -179,25 +198,30 @@ input[type="checkbox"] {
   align-items: center;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
-  font-size: 1.8rem;
+  font-size: 18px;
   text-align: left;
-  padding: 2.5rem 3.5rem;
+  padding: 25px 35px;
   color: #402b2b;
   background: #fff;
-  box-shadow: 0 2rem 4rem rgba(238, 77, 71, 0.1);
+  box-shadow: 0 20px 40px rgba(238, 77, 71, 0.1);
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 10px;
   transition: all 0.25s ease-out;
 }
 
 .lbl-toggle::after {
-  content: "\02795";
+  content: "+";
+  font-size: 2em;
   margin-left: auto;
-  padding-left: 1rem;
+  padding-left: 10px;
+  color: #ed4d47;
+
 }
 
 .toggle:checked + .lbl-toggle::after {
-  content: "\2212";
+  content: "-";
+  font-size: 2em;
+  color: #ed4d47;
 }
 
 .collapsible-content {
@@ -207,7 +231,7 @@ input[type="checkbox"] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 35rem;
+  max-height: 350px;
 }
 
 .toggle:checked + .lbl-toggle {
@@ -217,10 +241,10 @@ input[type="checkbox"] {
 
 .collapsible-content .content-inner {
   background: #fff7f5;
-  box-shadow: 0px 2rem 4rem rgba(238, 77, 71, 0.1);
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  padding: 4rem 3.5rem;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 40px 35px;
 }
 
 .slider {
@@ -266,6 +290,15 @@ input[type="checkbox"] {
 
 .card-client span {
   margin-left: 20px;
+}
+
+#carrossel-text h1 {
+  color: #EE4D47;
+  font-family: sans-serif, 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .footer-form {
