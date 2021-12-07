@@ -7,9 +7,12 @@ const homeController = {
   saveUSer: async (req, res) => {
     const { name, email, message } = req.body;
 
-    await Usuario.create({ name, email, message });
-
-    return res.redirect('/');
+    try {
+      await Usuario.create({ name, email, message });
+      return res.redirect('/');
+    } catch (e) {
+      console.error(e);
+    }
   },
 };
 

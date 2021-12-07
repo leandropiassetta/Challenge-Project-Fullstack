@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       name: DataTypes.STRING,
       email: DataTypes.STRING,
-      mensagem: DataTypes.TEXT,
+      message: DataTypes.TEXT,
       createdAt: {
         field: 'create_at',
         type: DataTypes.DATE,
