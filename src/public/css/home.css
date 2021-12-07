@@ -166,12 +166,49 @@
   margin-bottom: 40px;
 }
 
-.mySlides {
-
+.slider {
+  width: 800px;
+  padding-top: 60px;
 }
 
-.mySlides li {
+.glider {
+  overflow: hidden;
+}
 
+#g-next,
+#g-prev {
+  position: inherit;
+  color: #ee4d47;
+  margin-right: 10px;
+}
+
+.controls-slider {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  width: 420px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 30px 10px;
+}
+
+.card p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 60px 52px 60px 48px;
+}
+
+.card-client {
+  display: flex;
+  align-items: center;
+  padding: 0 0 40px 48px;
+}
+
+.card-client span {
+  margin-left: 20px;
 }
 
 .footer-form {

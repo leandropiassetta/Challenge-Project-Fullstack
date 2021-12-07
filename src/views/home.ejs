@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/glider.min.css" />
+    <script src="/js/glider.min.js"></script>
     <link rel="stylesheet" href="../css/home.css" />
     <title>Home</title>
   </head>
@@ -120,58 +122,59 @@
           >
         </div>
         <div class="slider">
-          <ul class="mySlides">
-            <li>
-              Yes, you will need to have the land owner<br />
-              sign the permit application as the Permittee,<br />
-              and you sign the permit as the Applicant or<br />
-              Agent for the Permittee.
-              <img src="/img/Ellipse 9.png" alt="" id="mark" />
-              <p>Isak Pettersson</p>
-            </li>
-            <li>
-              From most barricade or traffic control<br />
-              companies located in the phone book. They<br />
-              employ certified Traffic Control Supervisors<br />
-              (TCS) who can generate and certify the<br />
-              traffic control plan.
-              <img src="/img/Ellipse 8.png" alt="" id="simon-sandberg" />
-              <p>Simon Sandberg</p>
-            </li>
-            <li>
-              An A-Line, or access restriction deed is<br />
-              a property right that has been obtained<br />
-              by CDOT for the sole purpose of<br />
-              prohibiting direct
-              <img src="/img/Ellipse 7.png" alt="" id="simon-sandberg" />
-              <p>Leandro Piassetta</p>
-            </li>
-          </ul>
-          <button class="right" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="left" onclick="plusDivs(1)">&#10095;</button>
-          <script>
-            let slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-              showDivs((slideIndex += n));
-            }
-
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName('mySlides');
-              if (n > x.length) {
-                slideIndex = 1;
-              }
-              if (n < 1) {
-                slideIndex = x.length;
-              }
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = 'none';
-              }
-              x[slideIndex - 1].style.display = 'block';
-            }
-          </script>
+          <div class="controls-slider">
+            <button id="g-prev" class="glider-prev">
+              <img src="/img/arrow-l.svg" alt="prev slider" />
+            </button>
+            <button id="g-next" class="glider-next">
+              <img src="/img/arrow-r.svg" alt="next slider" />
+            </button>
+          </div>
+          <div class="glider">
+            <div class="card">
+              <p>Yes, you will need to have the land owner
+              sign the permit application as the Permittee,
+              and you sign the permit as the Applicant or
+              Agent for the Permittee.</p>
+              <div class="card-client">
+                <img src="/img/Ellipse9.png" alt="" id="mark" />
+                <span>Isak Pettersson</span>
+              </div>
+            </div>
+            <div class="card">
+              <p>From most barricade or traffic control
+              companies located in the phone book. They
+              employ certified Traffic Control Supervisors
+              (TCS) who can generate and certify the
+              traffic control plan.</p>
+              <div class="card-client">
+                <img src="/img/Ellipse8.png" alt="" id="simon-sandberg" />
+                <span>Simon Sandberg</span>
+              </div>
+            </div>
+            <div class="card">
+              <p>Meu professor Vini é o maior bebedor de café do mundo da programação!!!</p>
+              <div class="card-client">
+                <img src="/img/Ellipse7.png" alt="" id="simon-sandberg" />
+                <span>Leandro Piassetta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%-include('components/footer.ejs') %>
+    <script>
+      new Glider(document.querySelector(".glider"), {
+        slidesToScroll: 1,
+        slidesToShow: 2.1,
+        draggable: true,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next",
+        },
+      });
+    </script>
         </div>
       </div>
     </main>
