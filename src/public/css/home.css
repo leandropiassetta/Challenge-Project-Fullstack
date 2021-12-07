@@ -32,7 +32,7 @@
   text-decoration: none;
 }
 
-#botao-contato {
+#button-menu {
   text-decoration: none;
 }
 
@@ -47,7 +47,7 @@
 
 #caminhao {
   position: absolute;
-  margin-top: 582px;
+  margin-top: 567px;
   width: 300px;
 }
 
@@ -171,5 +171,5 @@
 }
 
 .mySlides li {
-  
+
 }

@@ -12,7 +12,7 @@
       <%- include('components/header.ejs') %>
 
       <section class="main-about">
-        <div class="about">
+        <div id="nav-about" class="about">
           <h1>ABOUT US</h1>
           <p>
             The occupational traffic permit is one of the most<br /><br />
@@ -20,13 +20,12 @@
             freight transport. In fact, it is a prerequisite for doing<br /><br />
             business traffic at all.<br /><br />
           </p>
-        </section>
-
-        <section>
+        </div>
+        <div>
           <img src="../img/Illustration.png" alt="" id="img-about" />
-        </section>
-      </div>
-      <section id="border">
+        </div>
+      </section>
+      <div id="border">
         <div class="border-box">
           <strong>
             <p>
@@ -36,8 +35,8 @@
             </p>
           </strong>
         </div>
-      </section>
-      <section class="apply-container">
+      </div>
+      <div class="apply-container">
         <img src="../img/illustrations.png" alt="" id="img-apply" />
         <div>
           <h1>HOW TO APPLY</h1>
@@ -51,8 +50,8 @@
             company signer or CEO.
           </p>
         </div>
-      </section>
-      <section id="faq">
+      </div>
+      <div id="faq">
         <div id="faq-div">
           <h1>FAQ</h1>
           <h2>
@@ -62,8 +61,8 @@
           </h2>
         </div>
         <img src="../img/Group 14.png" alt="" id="img-faq" />
-      </section>
-      <section class="details">
+      </div>
+      <div class="details">
         <div>
           <details>
             <summary>What is a professional traffic permit?</summary>
@@ -111,8 +110,8 @@
           </details>
           <a href="" class="load">LOAD MORE</a>
         </div>
-      </section>
-      <section class="carrossel">
+      </div>
+      <div class="carrossel">
         <div class="carrossel-text">
           <h1>ABOUT US</h1>
           <P
@@ -159,8 +158,8 @@
             }
 
             function showDivs(n) {
-              let i;
-              let x = document.getElementsByClassName('mySlides');
+              var i;
+              var x = document.getElementsByClassName('mySlides');
               if (n > x.length) {
                 slideIndex = 1;
               }
@@ -174,7 +173,7 @@
             }
           </script>
         </div>
-      </section>
+      </div>
     </main>
     <%-include('components/footer.ejs') %>
   </body>
