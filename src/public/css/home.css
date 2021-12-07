@@ -166,6 +166,63 @@
   margin-bottom: 40px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.wrap-collabsible {
+  margin: 1rem 0;
+}
+
+.lbl-toggle {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 2.5rem 3.5rem;
+  color: #402b2b;
+  background: #fff;
+  box-shadow: 0 2rem 4rem rgba(238, 77, 71, 0.1);
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle::after {
+  content: "\02795";
+  margin-left: auto;
+  padding-left: 1rem;
+}
+
+.toggle:checked + .lbl-toggle::after {
+  content: "\2212";
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 35rem;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: #fff7f5;
+  box-shadow: 0px 2rem 4rem rgba(238, 77, 71, 0.1);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4rem 3.5rem;
+}
+
 .slider {
   width: 800px;
   padding-top: 60px;
