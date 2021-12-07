@@ -11,7 +11,7 @@
     <main class="main">
       <%- include('components/header.ejs') %>
 
-      <div class="main-about">
+      <section class="main-about">
         <div class="about">
           <h1>ABOUT US</h1>
           <p>
@@ -20,13 +20,13 @@
             freight transport. In fact, it is a prerequisite for doing<br /><br />
             business traffic at all.<br /><br />
           </p>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <img src="../img/Illustration.png" alt="" id="img-about" />
-        </div>
+        </section>
       </div>
-      <div id="border">
+      <section id="border">
         <div class="border-box">
           <strong>
             <p>
@@ -36,8 +36,8 @@
             </p>
           </strong>
         </div>
-      </div>
-      <div class="apply-container">
+      </section>
+      <section class="apply-container">
         <img src="../img/illustrations.png" alt="" id="img-apply" />
         <div>
           <h1>HOW TO APPLY</h1>
@@ -51,8 +51,8 @@
             company signer or CEO.
           </p>
         </div>
-      </div>
-      <div id="faq">
+      </section>
+      <section id="faq">
         <div id="faq-div">
           <h1>FAQ</h1>
           <h2>
@@ -62,24 +62,24 @@
           </h2>
         </div>
         <img src="../img/Group 14.png" alt="" id="img-faq" />
-      </div>
-      <div class="details-pai">
+      </section>
+      <section class="details">
         <div>
-          <details class="details1">
+          <details>
             <summary>What is a professional traffic permit?</summary>
             <p>
               Traffic permits are a requirement for conducting professional
               traffic.
             </p>
           </details>
-          <details class="details1">
+          <details>
             <summary>What is a professional traffic permit?</summary>
             <p>
               Traffic permits are a requirement for conducting professional
               traffic.
             </p>
           </details>
-          <details class="details1">
+          <details>
             <summary>What is a professional traffic permit?</summary>
             <p>
               Traffic permits are a requirement for conducting professional
@@ -88,14 +88,14 @@
           </details>
         </div>
         <div>
-          <details class="details1">
+          <details>
             <summary>What is a professional traffic permit?</summary>
             <p>
               Traffic permits are a requirement for conducting professional
               traffic.
             </p>
           </details>
-          <details class="details1">
+          <details>
             <summary>What is a professional traffic permit?</summary>
             <p>
               Traffic permits are a requirement for conducting professional
@@ -111,8 +111,8 @@
           </details>
           <a href="" class="load">LOAD MORE</a>
         </div>
-      </div>
-      <div class="carrossel">
+      </section>
+      <section class="carrossel">
         <div class="carrossel-text">
           <h1>ABOUT US</h1>
           <P
@@ -127,35 +127,31 @@
               sign the permit application as the Permittee,<br />
               and you sign the permit as the Applicant or<br />
               Agent for the Permittee.
+              <img src="/img/Ellipse 9.png" alt="" id="mark" />
+              <p>Isak Pettersson</p>
             </li>
-            <img src="/img/Ellipse 9.png" alt="" id="mark" />
-            <p>Isak Pettersson</p>
-          </ul>
-          <ul class="mySlides">
             <li>
               From most barricade or traffic control<br />
               companies located in the phone book. They<br />
               employ certified Traffic Control Supervisors<br />
               (TCS) who can generate and certify the<br />
               traffic control plan.
+              <img src="/img/Ellipse 8.png" alt="" id="simon-sandberg" />
+              <p>Simon Sandberg</p>
             </li>
-            <img src="/img/Ellipse 8.png" alt="" id="simon-sandberg" />
-            <p>Simon Sandberg</p>
-          </ul>
-          <ul class="mySlides">
             <li>
               An A-Line, or access restriction deed is<br />
               a property right that has been obtained<br />
               by CDOT for the sole purpose of<br />
               prohibiting direct
+              <img src="/img/Ellipse 7.png" alt="" id="simon-sandberg" />
+              <p>Leandro Piassetta</p>
             </li>
-            <img src="/img/Ellipse 7.png" alt="" id="simon-sandberg" />
-            <p>Leandro Piassetta</p>
           </ul>
           <button class="right" onclick="plusDivs(-1)">&#10094;</button>
           <button class="left" onclick="plusDivs(1)">&#10095;</button>
           <script>
-            var slideIndex = 1;
+            let slideIndex = 1;
             showDivs(slideIndex);
 
             function plusDivs(n) {
@@ -163,8 +159,8 @@
             }
 
             function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName('mySlides');
+              let i;
+              let x = document.getElementsByClassName('mySlides');
               if (n > x.length) {
                 slideIndex = 1;
               }
@@ -178,7 +174,7 @@
             }
           </script>
         </div>
-      </div>
+      </section>
     </main>
     <%-include('components/footer.ejs') %>
   </body>
