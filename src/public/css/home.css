@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&family=Rubik:ital@0;1&display=swap');
+
+.container { 
+  background-image: url('../img/Scene.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.trafico { 
+  margin-left: 50px; 
+  margin-top: 20px; 
+} 
+
+#lista-menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-left: 645px; 
+  margin-top: -40px;
+}
+
+.menu {
+  text-decoration: none;
+}
+
+#botao-contato {
+  text-decoration: none;
+}
+
+#title-header {
+  position: absolute;
+  font-family: DM Serif Display;
+  bottom: 320px;
+  left: 300px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+#caminhao {
+  position: absolute;
+  margin-top: 582px;
+  width: 300px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-about {
+  display: flex;
+  gap:100px;
+  margin-top: 200px;
+}
+
+.main-about h1 {
+  color: #EE4D47;
+  font-family: sans-serif, 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.about {
+  margin-left: auto;
+}
+
+.about p {
+  margin-top: 30px;
+  margin-left: 0px;
+  margin-bottom: -100px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size:15px;
+  line-height: 10px;
+  color: #402B2B;
+}
+
+#img-about {
+  margin-top: -80px;
+  margin-right: 80px;
+  width: 400px;
+}
+
+.border-box {
+  margin-right: 530px;
+  margin-top: -100px;
+  width: 390px;
+  height: 88px;
+  line-height: 30px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  text-align: left;
+  color: #402B2B;
+  font-weight: bold;
+  border:10px, solid, red; 
+}
+
+#img-apply {
+  width: 500px;
+  margin-top: -140px;
+}
+
+.apply-container {
+  display: flex;
+  margin-top: 170px;
+  margin-right: 240px;
+  font-family: sans-serif, 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 10px;  
+  color: #EE4D47;
+  gap:50px;
+}
+
+.apply-container p {
+  margin-top: 35px;
+  font-style: normal;
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-size:15px;
+  line-height: 10px;
+  color: #402B2B;
+}
+
+#faq {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display:flex;
+  justify-content: space-around;
+}
+
+#faq-div {
+  margin-top: 87px;
+}
+
+#faq h1 {
+  color: #EE4D47;
+  font-family: sans-serif, 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+#faq h2 {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+#img-faq {
+  width: 500px;
+  margin-bottom: 40px;
+}

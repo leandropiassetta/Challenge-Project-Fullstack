@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <main class="main">
+      <%- include('components/header.ejs') %>
+
+      <div class="main-about">
+        <div class="about">
+          <h1>ABOUT US</h1>
+          <p>
+            The occupational traffic permit is one of the most<br /><br />
+            important things in the company when carrying out<br /><br />
+            freight transport. In fact, it is a prerequisite for doing<br /><br />
+            business traffic at all.<br /><br />
+          </p>
+        </div>
+
+        <div>
+          <img src="../img/Illustration.png" alt="" id="img-about" />
+        </div>
+      </div>
+      <div id="border">
+        <div class="border-box">
+          <strong>
+            <p>
+              How do you do when you need to obtain<br />
+              a commercial traffic permit for freight<br />
+              transport to your business?
+            </p>
+          </strong>
+        </div>
+      </div>
+      <div class="apply-container">
+        <img src="../img/illustrations.png" alt="" id="img-apply" />
+        <div>
+          <h1>HOW TO APPLY</h1>
+          <p>
+            When applying for a traffic permit, there are certain <br /><br />
+            requirements that you must meet that are included in<br /><br />
+            the examination: requirements for professional<br /><br />
+            knowledge, solid establishment, good reputation and<br /><br />
+            financial resources. Important to remember is to confirm<br /><br />
+            your application for a traffic permit by the company's<br /><br />
+            company signer or CEO.
+          </p>
+        </div>
+      </div>
+      <div id="faq">
+        <div id="faq-div">
+          <h1>FAQ</h1>
+          <h2>
+            Questions and Answers<br />
+            on Professional Traffic<br />
+            Permits:
+          </h2>
+        </div>
+        <img src="../img/Group 14.png" alt="" id="img-faq" />
+      </div>
+      <div class="details-pai">
+        <div>
+          <details class="details1">
+            <summary>What is a professional traffic permit?</summary>
+            <p>
+              Traffic permits are a requirement for conducting professional
+              traffic.
+            </p>
+          </details>
+          <details class="details1">
+            <summary>What is a professional traffic permit?</summary>
+            <p>
+              Traffic permits are a requirement for conducting professional
+              traffic.
+            </p>
+          </details>
+          <details class="details1">
+            <summary>What is a professional traffic permit?</summary>
+            <p>
+              Traffic permits are a requirement for conducting professional
+              traffic.
+            </p>
+          </details>
+        </div>
+        <div>
+          <details class="details1">
+            <summary>What is a professional traffic permit?</summary>
+            <p>
+              Traffic permits are a requirement for conducting professional
+              traffic.
+            </p>
+          </details>
+          <details class="details1">
+            <summary>What is a professional traffic permit?</summary>
+            <p>
+              Traffic permits are a requirement for conducting professional
+              traffic.
+            </p>
+          </details>
+          <details class="details1">
+            <summary>What is a professional traffic permit?</summary>
+            <p>
+              Traffic permits are a requirement for conducting professional
+              traffic.
+            </p>
+          </details>
+          <a href="" class="load">LOAD MORE</a>
+        </div>
+      </div>
+      <div class="carrossel">
+        <div class="carrossel-text">
+          <h1>ABOUT US</h1>
+          <P
+            >Out Awesome<br />
+            Clients</P
+          >
+        </div>
+        <div class="slider">
+          <ul class="mySlides">
+            <li>
+              Yes, you will need to have the land owner<br />
+              sign the permit application as the Permittee,<br />
+              and you sign the permit as the Applicant or<br />
+              Agent for the Permittee.
+            </li>
+            <img src="/img/Ellipse 9.png" alt="" id="mark" />
+            <p>Isak Pettersson</p>
+          </ul>
+          <ul class="mySlides">
+            <li>
+              From most barricade or traffic control<br />
+              companies located in the phone book. They<br />
+              employ certified Traffic Control Supervisors<br />
+              (TCS) who can generate and certify the<br />
+              traffic control plan.
+            </li>
+            <img src="/img/Ellipse 8.png" alt="" id="simon-sandberg" />
+            <p>Simon Sandberg</p>
+          </ul>
+          <ul class="mySlides">
+            <li>
+              An A-Line, or access restriction deed is<br />
+              a property right that has been obtained<br />
+              by CDOT for the sole purpose of<br />
+              prohibiting direct
+            </li>
+            <img src="/img/Ellipse 7.png" alt="" id="simon-sandberg" />
+            <p>Leandro Piassetta</p>
+          </ul>
+          <button class="right" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="left" onclick="plusDivs(1)">&#10095;</button>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName('mySlides');
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';
+              }
+              x[slideIndex - 1].style.display = 'block';
+            }
+          </script>
+        </div>
+      </div>
+    </main>
+    <%-include('components/footer.ejs') %>
+  </body>
+</html>
