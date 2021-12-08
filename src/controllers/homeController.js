@@ -9,7 +9,7 @@ const homeController = {
 
     try {
       await Usuario.create({ name, email, message });
-      return res.redirect('/');
+      return res.redirect('/home');
     } catch (e) {
       console.error(e);
     }
